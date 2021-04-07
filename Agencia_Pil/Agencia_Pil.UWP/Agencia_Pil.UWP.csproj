@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{C53E05DD-D261-4F40-97C8-3E2DC43F1F98}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agencia_Pil.UWP</RootNamespace>
+    <AssemblyName>Agencia_Pil.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="administrador.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="bars01.jpg" />
+    <Content Include="bars02.jpg" />
+    <Content Include="bars03.jpg" />
+    <Content Include="bars04.jpg" />
+    <Content Include="bars05.jpg" />
+    <Content Include="bars06.jpg" />
+    <Content Include="bars07.jpg" />
+    <Content Include="bars08.jpg" />
+    <Content Include="bpbn01.jpg" />
+    <Content Include="bpbn02.jpg" />
+    <Content Include="bpbn03.jpg" />
+    <Content Include="bpbn04.jpg" />
+    <Content Include="bpbn05.jpg" />
+    <Content Include="bpbn06.jpg" />
+    <Content Include="bpbn07.jpg" />
+    <Content Include="bpbn08.jpg" />
+    <Content Include="bpbn09.jpg" />
+    <Content Include="bpbn10.jpg" />
+    <Content Include="bpbn11.jpg" />
+    <Content Include="bpbn12.jpg" />
+    <Content Include="bpbn13.jpg" />
+    <Content Include="bpva01.jpg" />
+    <Content Include="bpva02.jpg" />
+    <Content Include="bpva03.jpg" />
+    <Content Include="bpva04.jpg" />
+    <Content Include="bpvbr01.jpg" />
+    <Content Include="bpvbr02.jpg" />
+    <Content Include="bpvbr03.jpg" />
+    <Content Include="bpvn01.jpg" />
+    <Content Include="bpvn02.jpg" />
+    <Content Include="bpvn03.jpg" />
+    <Content Include="bpvn04.jpg" />
+    <Content Include="bpvn05.jpg" />
+    <Content Include="bpvn06.jpg" />
+    <Content Include="bpvn07.jpg" />
+    <Content Include="bpvn08.jpg" />
+    <Content Include="bpvn09.jpg" />
+    <Content Include="bpvn10.jpg" />
+    <Content Include="brtl01.jpg" />
+    <Content Include="brtl02.jpg" />
+    <Content Include="brtn01.jpg" />
+    <Content Include="brtn02.jpg" />
+    <Content Include="brtn03.jpg" />
+    <Content Include="brtn04.jpg" />
+    <Content Include="CGG001.jpg" />
+    <Content Include="inventario.png" />
+    <Content Include="lfb10.jpg" />
+    <Content Include="lfb20.jpg" />
+    <Content Include="lgc10.jpg" />
+    <Content Include="logoPil.png" />
+    <Content Include="lpb10.jpg" />
+    <Content Include="lpb20.jpg" />
+    <Content Include="lplc10.jpg" />
+    <Content Include="lple10.jpg" />
+    <Content Include="lplf10.jpg" />
+    <Content Include="lplf11.jpg" />
+    <Content Include="lplf12.png" />
+    <Content Include="lplf13.jpg" />
+    <Content Include="lplf20.jpg" />
+    <Content Include="lplf21.jpg" />
+    <Content Include="lplf22.jpg" />
+    <Content Include="lplf30.jpg" />
+    <Content Include="lplf31.jpg" />
+    <Content Include="lplf32.jpg" />
+    <Content Include="lplf40.jpg" />
+    <Content Include="lplf41.jpg" />
+    <Content Include="lplf42.png" />
+    <Content Include="lplf50.jpg" />
+    <Content Include="lplf51.jpg" />
+    <Content Include="lplf52.jpg" />
+    <Content Include="lplf60.jpg" />
+    <Content Include="lplf61.png" />
+    <Content Include="lplf62.jpg" />
+    <Content Include="lplf70.jpg" />
+    <Content Include="lplf71.jpg" />
+    <Content Include="lplf72.jpg" />
+    <Content Include="lplf80.png" />
+    <Content Include="lplf81.jpg" />
+    <Content Include="lplf82.jpg" />
+    <Content Include="lplf90.jpg" />
+    <Content Include="lplf91.jpg" />
+    <Content Include="lplf92.jpg" />
+    <Content Include="lplp10.jpg" />
+    <Content Include="lplp11.jpg" />
+    <Content Include="lplp20.jpg" />
+    <Content Include="lplp21.jpg" />
+    <Content Include="lplp30.jpg" />
+    <Content Include="lplp31.jpg" />
+    <Content Include="lplp40.jpg" />
+    <Content Include="lplp50.jpg" />
+    <Content Include="lplp60.png" />
+    <Content Include="lplp70.jpg" />
+    <Content Include="lplp80.jpg" />
+    <Content Include="lplp90.jpg" />
+    <Content Include="lpve10.jpg" />
+    <Content Include="ppc10.jpg" />
+    <Content Include="ppc20.jpg" />
+    <Content Include="ppp10.jpg" />
+    <Content Include="ppp11.jpg" />
+    <Content Include="produ.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="venta.png" />
+    <Content Include="ybyb01.jpg" />
+    <Content Include="ybyb02.jpg" />
+    <Content Include="ybyb03.jpg" />
+    <Content Include="ybyb04.jpg" />
+    <Content Include="ygyb01.jpg" />
+    <Content Include="ygyb02.jpg" />
+    <Content Include="ypvyb01.jpg" />
+    <Content Include="ypvyb02.jpg" />
+    <Content Include="ypyb01.jpg" />
+    <Content Include="ypyb02.jpg" />
+    <Content Include="ypyb03.jpg" />
+    <Content Include="ypyb04.jpg" />
+    <Content Include="ypyb05.jpg" />
+    <Content Include="ypyb06.jpg" />
+    <Content Include="ypyb07.jpg" />
+    <Content Include="ypyb08.jpg" />
+    <Content Include="ypyb09.jpg" />
+    <Content Include="ypyb10.jpg" />
+    <Content Include="ypyb11.jpg" />
+    <Content Include="ypyb12.jpg" />
+    <Content Include="ypyb13.jpg" />
+    <Content Include="ypyb14.jpg" />
+    <Content Include="ypyb15.jpg" />
+    <Content Include="ypyb16.jpg" />
+    <Content Include="ypyb17.jpg" />
+    <Content Include="ypyb18.jpg" />
+    <Content Include="ypyb19.jpg" />
+    <Content Include="ypyb20.jpg" />
+    <Content Include="ypyb21.jpg" />
+    <Content Include="ypyb22.jpg" />
+    <Content Include="ypyb23.jpg" />
+    <Content Include="ypyb24.jpg" />
+    <Content Include="ypyba01.jpg" />
+    <Content Include="ypye01.jpg" />
+    <Content Include="ypye02.jpg" />
+    <Content Include="ypye03.jpg" />
+    <Content Include="ypye04.jpg" />
+    <Content Include="ypyf01.jpg" />
+    <Content Include="ypyf02.jpg" />
+    <Content Include="ypyf03.jpg" />
+    <Content Include="ypyf04.jpg" />
+    <Content Include="ypyf05.jpg" />
+    <Content Include="ypyf06.jpg" />
+    <Content Include="ypyf07.jpg" />
+    <Content Include="ypyf08.jpg" />
+    <Content Include="ypyf09.jpg" />
+    <Content Include="ypyg01.jpg" />
+    <Content Include="ypyg02.jpg" />
+    <Content Include="ypyg03.jpg" />
+    <Content Include="ypyp01.jpg" />
+    <Content Include="ypyp02.jpg" />
+    <Content Include="ypyp03.jpg" />
+    <Content Include="ypyp04.jpg" />
+    <Content Include="ypyp05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>2.0.0.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.10" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>1.4.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agencia_Pil\Agencia_Pil.csproj">
+      <Project>{5698200D-B9B0-4143-958E-32C7A67B514E}</Project>
+      <Name>Agencia_Pil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.18362.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\berlin.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\MadeFlorenceSans.otf" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

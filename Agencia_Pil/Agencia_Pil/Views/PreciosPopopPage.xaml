@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="Agencia_Pil.Views.PreciosPopopPage" CloseWhenBackgroundIsClicked="True">
+    <pancake:PancakeView BackgroundGradientStartColor="Transparent" BackgroundGradientEndColor="Black"
+                         BackgroundGradientAngle="45"
+        HeightRequest="250" WidthRequest="500" HorizontalOptions="Center" VerticalOptions="Center">
+        <Frame Margin="30" Padding="10">
+            <StackLayout BackgroundColor="#485e54">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                             >
+                    <Label Text="" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="lblNombreProd" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="10"></Label>
+
+
+                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                    <Label Text="PRECIO POR MAYOR" TextColor="White" WidthRequest="200" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Entry Text="" Placeholder="0.00" x:Name="txtPrecioMayor" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Entry>
+                    <Label Text="Bs." VerticalTextAlignment="Center" TextColor="White" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="PRECIO POR UNIDAD"
+                           TextColor="White"
+                           WidthRequest="200" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Entry Text="" Placeholder="0.00" x:Name="txtprecioMenor" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label TextColor="White"
+                        Text="Bs." VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <Button Text="REGISTRAR" TextTransform="Uppercase" FontAttributes="Bold" x:Name="btnRegistrar" Clicked="btnRegistrar_Clicked"></Button>
+            </StackLayout>
+            
+        </Frame>
+    </pancake:PancakeView>
+</popup:PopupPage>

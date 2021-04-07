@@ -1,0 +1,94 @@
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.deps.json
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\ref\Agencia_Pil.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.pdb
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfoInputs.cache
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfo.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\ref\Agencia_Pil.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.pdb
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\loginPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageDetail.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageMaster.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\InventarioPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Utilities.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Schema.Sql.resources.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Utilities.resources.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.SqlServer.TransactSql.ScriptDom.resources.dll
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csproj.CopyComplete
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csprojAssemblyReference.cache
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentaPopupPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPedidoPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPrecioPage.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RepotesPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\InventarioPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\loginPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageDetail.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageMaster.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPedidoPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPrecioPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentaPopupPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfoInputs.cache
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfo.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csproj.CoreCompileInputs.cache
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\ref\Agencia_Pil.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.pdb
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RepotesPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.deps.json
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\ref\Agencia_Pil.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.pdb
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.Data.Tools.Utilities.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Schema.Sql.resources.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.Data.Tools.Utilities.resources.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\es\Microsoft.SqlServer.TransactSql.ScriptDom.resources.dll
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csproj.CopyComplete
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\registrUsuario.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\AgregarProducto.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\AgregarProducto.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\registrUsuario.xaml.g.cs
+C:\Proyectos\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\ActualizarPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csprojAssemblyReference.cache
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\ActualizarPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\AgregarProducto.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\InventarioPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\loginPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageDetail.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PrincipalPageMaster.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPedidoPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RegistrarPrecioPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\registrUsuario.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\RepotesPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentaPopupPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfoInputs.cache
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.AssemblyInfo.cs
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csproj.CoreCompileInputs.cache
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.dll
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\ref\Agencia_Pil.dll
+C:\Users\My PC\OneDrive\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.pdb
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\ActualizarPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Views\PreciosPopopPage.xaml.g.cs
+C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\obj\Debug\netstandard2.0\Agencia_Pil.csprojAssemblyReference.cache

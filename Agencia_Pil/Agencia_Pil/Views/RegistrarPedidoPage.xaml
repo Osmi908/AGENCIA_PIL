@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Agencia_Pil.Views.RegistrarPedidoPage"
+             BackgroundColor="#fffda8">
+    <ContentPage.Content>
+        <pancake:PancakeView Background="#fffda8" >
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+                <StackLayout  Grid.Column="1" Grid.Row="1"  >
+                    <StackLayout>
+                        <Label Text="PRODUCTOS" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"  FontSize="25" FontAttributes="Bold"></Label>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="#424242">
+                            <Picker Title="BUSCAR POR:" ItemsSource="{Binding opcionesDeBusqueda}" x:Name="pkrop" HorizontalOptions="Fill" TextColor="White" TitleColor="White"></Picker>
+                            <SearchBar x:Name="sbarBusqueda" TextChanged="sbarBusqueda_TextChanged" HorizontalOptions="FillAndExpand"></SearchBar>
+                        </StackLayout>
+                        <ListView x:Name="ListViewProd" ItemsSource="{Binding productos}" ItemTapped="ListViewProd_ItemTapped" HasUnevenRows="True" BackgroundColor="#424242">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <pancake:PancakeView Margin="80,5,80,5" Padding="20" BackgroundGradientStartColor="#fffda8" BackgroundGradientEndColor="#424242" BackgroundGradientAngle="90">
+                                            <Grid Padding="10" BackgroundColor="Transparent">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="80" />
+                                                    <RowDefinition Height="20" />
+                                                    <RowDefinition Height="20" />
+                                                    <RowDefinition Height="20" />
+                                                </Grid.RowDefinitions>
+                                                <Frame Grid.Column="0" HeightRequest="80" WidthRequest="80" HorizontalOptions="Center"
+                                                       CornerRadius="70" BackgroundColor="White">
+                                                    <Image 
+                       Source="{Binding imagen}"
+                       Aspect="AspectFit"
+                       HeightRequest="70"
+                       WidthRequest="70" />
+                                                </Frame>
+
+                                                <Label Grid.Column="0"
+                                                       Grid.Row="1"
+                       Text="{Binding nombre}"
+                       FontAttributes="Bold"  HorizontalOptions="FillAndExpand"/>
+                                                <Label Grid.Row="2"
+                       Grid.Column="0"
+                       Text="{Binding precio, StringFormat='Precio por unidad {0:F2} Bs '}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                                                <Label Grid.Row="3"
+                       Grid.Column="0"
+                       Text="{Binding precio, StringFormat='Precio por cantidad {0:F2} Bs '}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                                                <Label Grid.Row="4"
+                       Grid.Column="0"
+                       Text="{Binding cantidad , StringFormat='Hay {0} Unidades'}"
+                       LineBreakMode="TailTruncation"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                                            </Grid>
+                                        </pancake:PancakeView>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout BackgroundColor="Transparent" Grid.Column="2" Grid.Row="1">
+                <Grid ColumnSpacing="2" WidthRequest="80"
+                      RowSpacing="2"
+                      BackgroundColor="Black">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2"/>
+                    </Grid.ColumnDefinitions>
+
+
+                </Grid>
+                    <Label x:Name="lblnroventa" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"  FontSize="25" FontAttributes="Bold"></Label>
+                    <StackLayout Orientation="Vertical" BackgroundColor="#424242">
+                        <Label Text="EN QUE FECHA SE HIZO EL PEDIDO ?" TextColor="White" FontAttributes="Bold"
+                       ></Label>
+                        <DatePicker x:Name="datepkr_recepcion"></DatePicker>
+                        <Label Text="DETALLE DEL PEDIDO" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"  FontSize="25" FontAttributes="Bold"></Label>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal" Padding="0" Margin="0"
+                                     BackgroundColor="Transparent" >
+                        <Label HeightRequest="25" Text="NRO" TextColor="White" HorizontalOptions="Center" BackgroundColor="Black"
+                               FontAttributes="Bold" WidthRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label HeightRequest="50" Text="IMG" TextColor="White" HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center" FontAttributes="Bold" WidthRequest="50" BackgroundColor="Black" VerticalTextAlignment="Center"/>
+                        <Label HeightRequest="100" Text="NOMBRE" TextColor="White" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                               FontAttributes="Bold" WidthRequest="105" BackgroundColor="Black" VerticalTextAlignment="Center"/>
+                        <Label HeightRequest="80" Text="CANT" TextColor="White" HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center" FontAttributes="Bold" WidthRequest="70" BackgroundColor="Black" VerticalTextAlignment="Center"/>
+                        <Label HeightRequest="80" Text="P/U" TextColor="White" HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center" FontAttributes="Bold" WidthRequest="80" BackgroundColor="Black" VerticalTextAlignment="Center"/>
+                        <Label HeightRequest="80" Text="P/TOTAL" TextColor="White" HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center" FontAttributes="Bold" WidthRequest="80" BackgroundColor="Black" VerticalTextAlignment="Center"/>
+
+                    </StackLayout>
+
+                    <ListView x:Name="ListView_productos" 
+                          CachingStrategy="RecycleElement" 
+                          BackgroundColor="#424242"
+                          HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                    <pancake:PancakeView BackgroundGradientStartColor="#424242"
+                                                         BackgroundGradientEndColor="#fffda8"
+                                                         BackgroundGradientAngle="90"
+                                                         CornerRadius="0,0,0,90">
+                                        <StackLayout >
+                                            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Spacing="0">
+                                                <Frame CornerRadius="90" BackgroundColor="Black" HeightRequest="40" 
+                                                   VerticalOptions="Center"
+                                                   WidthRequest="40" Padding="5" >
+                                                    <Label Text="{Binding numero}" 
+                                                       FontSize="13"
+                                                       TextColor="White"
+                                                       Padding="0"
+                                                       Margin="0"
+                                                   FontAttributes="Bold" 
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center" HorizontalTextAlignment="Center" 
+                                                   VerticalTextAlignment="Center"></Label>
+
+                                                </Frame>
+                                                <Frame CornerRadius="90" BackgroundColor="White" HeightRequest="40" 
+                                                   VerticalOptions="Center"
+                                                   WidthRequest="40" Padding="5"  >
+                                                    <Image Source="{Binding producto.imagen}"
+                                           HeightRequest="50"
+                                           WidthRequest="50" />
+                                                </Frame>
+                                                
+
+
+                                                <Label Text="{Binding producto.nombre}" 
+                                           x:Name="lblnombrep"
+                                                       TextColor="White"
+                                                   HorizontalTextAlignment="Center"
+                                           HorizontalOptions="CenterAndExpand" 
+                                           VerticalOptions="Center"
+                                           FontSize="15" Margin="5"
+                                           FontAttributes="Bold"></Label>
+                                                <Label Text="{Binding cantidad}"
+                                                       TextColor="White"
+                                           HorizontalOptions="Center" 
+                                           WidthRequest="70" HeightRequest="30" 
+                                           VerticalOptions="Center"
+                                                       HorizontalTextAlignment="Center"
+                                           FontSize="12"
+                                           x:Name="txt_cantidad"/>
+                                                <Label Text="{Binding precio_unitario , StringFormat='{0:F2} Bs'}" 
+                                                       TextColor="White"
+                                           HorizontalOptions="Center" 
+                                           WidthRequest="80" HeightRequest="30" 
+                                           VerticalOptions="Center"
+                                                       HorizontalTextAlignment="Center"
+                                           FontSize="12"
+                                           Unfocused="txt_precio_tot_Unfocused"/>
+                                                <Label Text="{Binding precio_Total , StringFormat='{0:F2} Bs'}" 
+                                                       TextColor="White"
+                                           HorizontalOptions="Center" 
+                                           WidthRequest="80" 
+                                           HeightRequest="30" 
+                                                       HorizontalTextAlignment="Center"
+                                           VerticalOptions="Center"
+                                           FontSize="12"
+                                           x:Name="txt_precio_tot"
+                                           Unfocused="txt_precio_tot_Unfocused"></Label>
+                                            </StackLayout>
+                                            <BoxView BackgroundColor="Black" HeightRequest="5" WidthRequest="500" HorizontalOptions="CenterAndExpand"></BoxView>
+
+                                        </StackLayout>
+
+                                    </pancake:PancakeView>
+                                    
+                                </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout Orientation="Horizontal" Grid.ColumnSpan="3" 
+                             Grid.Row="2" Grid.Column="1">
+                    <Label Text="" x:Name="lblCant_Prod" TextColor="Black" FontAttributes="Bold" FontSize="15" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
+                        <Label x:Name="lblMontoTotal" TextColor="Black" FontAttributes="Bold" FontSize="15" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"></Label>
+                </StackLayout>
+                    <Button Text="REGISTRAR" Grid.Row="2" Grid.Column="1"  TextColor="Black" FontAttributes="Bold" Margin="5" BackgroundColor="#fffda8" BorderColor="Black" BorderWidth="7"
+                        HorizontalOptions="Center"
+                        Grid.ColumnSpan="3" x:Name="btnregistrar"
+                        Clicked="btnregistrar_Clicked"></Button>
+            </StackLayout>
+
+        </Grid>
+        </pancake:PancakeView>
+    </ContentPage.Content>
+</ContentPage>

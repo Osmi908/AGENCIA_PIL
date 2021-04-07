@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agencia_Pil.Views.RepotesPage"
+            BackgroundColor="#485e54"
+            Title="REPORTES">
+    <TabbedPage.Children>
+        <ContentPage Title="REPORTE DE VENTAS">
+            <Grid>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="#364c42">
+                    <Label Text="Generar Reporte" Style="{StaticResource TITULOLISTA}" TextColor="Khaki" />
+                    <Picker x:Name="pkTIpoReporte" 
+                             SelectedIndexChanged="pkTIpoReporte_SelectedIndexChanged"></Picker>
+                    <Label Text="Generar Reporte de la fecha"/>
+                    <DatePicker x:Name="DtpkFecha" Format="{Binding FormatoFecha}">
+                    </DatePicker>
+                    <Button Text="GENERAR" x:Name="btnGenerar_Reporte" Clicked="btnGenerar_Reporte_Clicked"/>
+                    
+
+
+                </StackLayout>
+                <ScrollView Grid.Row="2" Grid.Column="1" IsVisible="false" x:Name="scrLista">
+                    <Grid BackgroundColor="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="200"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="REPORTE DE VENTAS" Grid.Row="0" Grid.ColumnSpan="2" FontSize="Medium" Style="{StaticResource TITULOLISTA}"></Label>
+                        <Label Text="SEMANA:" Grid.Row="1" Grid.Column="0" FontSize="Micro"/>
+                        <Label Text="" FontSize="Micro" Grid.Column="1" Grid.Row="1" x:Name="lblSemana"/>
+                        <Label Text="" x:Name="FechaInicio" Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="" x:Name="FechaFin" Grid.Row="2" Grid.Column="1" />
+                        <Label Text="Fecha de inicio" Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="Fecha de fin" Grid.Row="3" Grid.Column="1"/>
+                        <ListView x:Name="lstVentas" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding ListaVentas}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Label Text="{Binding id_venta} " Grid.Column="0"></Label>
+                                            <Label Text="{Binding cantidad_productos}" Grid.Column="1"/>
+                                            <Label Text="{Binding Monto_total}" Grid.Column="2"/>
+                                            <Label Text="{Binding ci_usuario}" Grid.Column="3"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollView>
+                        
+
+            </Grid>
+        </ContentPage>
+</TabbedPage.Children>
+
+</TabbedPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agencia_Pil.Views.PrincipalPage"
+             xmlns:pages="clr-namespace:Agencia_Pil.Views">
+  <MasterDetailPage.Master>
+    <pages:PrincipalPageMaster x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage
+        BarBackgroundColor="#003679" 
+     BarTextColor="White" >
+        
+      <x:Arguments>
+        <pages:PrincipalPageDetail />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

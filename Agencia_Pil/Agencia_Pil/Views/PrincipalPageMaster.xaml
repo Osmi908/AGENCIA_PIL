@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Agencia_Pil.Views.PrincipalPageMaster"
+             Title="Master"
+             >
+    
+    <ContentPage.Content>
+        <pancake:PancakeView BackgroundColor="DarkSlateBlue">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" HorizontalOptions="CenterAndExpand" BackgroundColor="#003679"
+                             >
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="logoPil.png" BackgroundColor="#003679"></Image>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="LightSkyBlue" Grid.Row="1" Padding="20"  >
+
+                    <Label Text="INVENTARIO" TextColor="#003679" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="20"  VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+                    <Image  Source="inventario.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="EndAndExpand"></Image>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked">
+                            
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Row="2" BackgroundColor="#b05a4e"  Padding="20"  >
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnpventa_Clicked">
+
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="PUNTO DE VENTA" x:Name="btnpventa" TextColor="#003679" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="20"  VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+                    <Image Source="venta.png" HeightRequest="45" WidthRequest="45" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Row="3" BackgroundColor="#fffda8"   Padding="20">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnRegistrarPedido_Clicked">
+
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="REGISTRAR PEDIDO" x:Name="btnRegistrarPedido" TextColor="#003679" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="20"  VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+                    <Image Source="produ.png" HeightRequest="45" WidthRequest="45" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Row="4" BackgroundColor="#485e54" Padding="20" Spacing="0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnAdministrar_Clicked">
+
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="ADMINISTRAR" x:Name="btnAdministrar" TextColor="#003679" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="20"  VerticalTextAlignment="Center" HorizontalOptions="Start"></Label>
+                    <Image Source="administrador.png" HeightRequest="45" WidthRequest="45" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout IsVisible="False"  x:Name="stckAdminSubMenu" Grid.Row="5" Spacing="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout BackgroundColor="Transparent" Grid.Column="0" Grid.Row="0"></StackLayout>
+                        <pancake:PancakeView Grid.Column="0" Grid.Row="0" BackgroundGradientEndColor="DarkSlateBlue" BackgroundGradientStartColor="#485e54" BackgroundGradientAngle="90" >
+                            <StackLayout  >
+                                <Button Text="REGISTRAR PRECIOS" x:Name="btnRegPrecios" Clicked="btnRegPrecios_Clicked" BackgroundColor="Transparent" HorizontalOptions="End" TextColor="White" WidthRequest="200" FontSize="15" FontAttributes="Bold"  VerticalOptions="CenterAndExpand"></Button>
+                                <Button Text="REGISTRAR PRODUCTOS" x:Name="btnRegProductos" Clicked="btnRegProductos_Clicked"  BackgroundColor="Transparent" TextColor="White" FontSize="15" HorizontalOptions="End" FontAttributes="Bold" WidthRequest="200" VerticalOptions="CenterAndExpand"/>
+                                <Button Text="REGISTRAR USUARIO" x:Name="btnRegUsuario" Clicked="btnRegUsuario_Clicked" BackgroundColor="Transparent" TextColor="White" FontSize="15" FontAttributes="Bold" WidthRequest="200" HorizontalOptions="End" VerticalOptions="CenterAndExpand"/>
+                                <Button Text="REPORTES" x:Name="btnReportes" Clicked="btnReportes_Clicked" BackgroundColor="Transparent" TextColor="White" FontSize="15" FontAttributes="Bold" WidthRequest="200" HorizontalOptions="End" VerticalOptions="CenterAndExpand"/>
+                                <Button Text="ACTUALIZAR" x:Name="btnActualizar" Clicked="btnActualizar_Clicked"  BackgroundColor="Transparent" TextColor="White" FontSize="15" FontAttributes="Bold" WidthRequest="200" HorizontalOptions="End" VerticalOptions="CenterAndExpand"/>
+                                <StackLayout WidthRequest="100" VerticalOptions="FillAndExpand"></StackLayout>
+                            </StackLayout>
+                            
+                        </pancake:PancakeView>
+                        
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </pancake:PancakeView>
+
+    </ContentPage.Content>
+
+</ContentPage>

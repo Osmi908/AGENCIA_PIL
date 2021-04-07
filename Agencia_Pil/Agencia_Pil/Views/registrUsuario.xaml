@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agencia_Pil.Views.registrUsuario"
+             BackgroundColor="DarkSlateBlue">
+    <ContentPage.Content>
+        <Frame HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="500" WidthRequest="500" BorderColor="White" >
+            <StackLayout>
+                <Label Text="DATOS DEL USUARIO" Style="{StaticResource TITULOLISTA}" TextColor="White"></Label>
+                <Entry Placeholder="APellido Paterno" x:Name="txtpaterno" Text=""></Entry>
+                <Entry Placeholder="Apellido Matreno" x:Name="txtMaterno" Text=""></Entry>
+                <Entry Placeholder="nombre(s)" x:Name="txtNombres" Text=""></Entry>
+                <Entry Placeholder="Carnet de identidad" x:Name="txtCi" Text=""></Entry>
+                <Entry Placeholder="Telefono" x:Name="txttelefono" Text=""/>
+                <Picker Title="ROL :" x:Name="pkrRol" ></Picker>
+                <Entry Text="" x:Name="txtusuario" Placeholder="usuario"/>
+                <Entry Placeholder="crear contraseña" x:Name="txtcontraseña" Text=""></Entry>
+                <Entry Placeholder="repite la contraseña"  x:Name="txtRepContraseña" Text=""></Entry>
+                
+                <Button Text="CREAR USUARIO" x:Name="btnCrear" Clicked="btnCrear_Clicked" BorderColor="White" BorderWidth="3" BackgroundColor="Transparent" TextColor="White"
+                        Margin="10" Padding="10"></Button>
+
+
+            </StackLayout>
+        </Frame>
+        
+    </ContentPage.Content>
+</ContentPage>

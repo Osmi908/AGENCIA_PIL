@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agencia_Pil.Views.RegistrarPrecioPage"
+            BackgroundColor="#485e54"
+            BarBackgroundColor="#003679"
+            BarTextColor="White">
+    
+    <TabbedPage.Children>
+        <ContentPage Title="CAMBIAR PRECIOS">
+
+            <StackLayout Spacing="10">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="10">
+                    <Label Text="LISTA DE PRODUCTOS CON PRECIO" TextColor="Khaki" HorizontalOptions="Center" VerticalOptions="Center" FontSize="25" FontAttributes="Bold"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               Padding="15"></Label>
+                </StackLayout>
+                <ListView ItemsSource="{Binding Productos_con_Precio}" x:Name="listaProd"  ItemTapped="listaProd_ItemTapped" Margin="100"
+                              BackgroundColor="#364c42">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding nombre}"/>
+                                    <Label Text="{Binding codigo}"/>
+                                    <Label Text="{Binding precio}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="REGISTRAR NUEVOS PRECIOS" >
+            <ContentPage.Content>
+                <StackLayout Spacing="10">
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="10">
+                        <Label Text="LISTA DE PRODUCTOS SIN PRECIO" TextColor="Khaki" HorizontalOptions="Center" VerticalOptions="Center" FontSize="25" FontAttributes="Bold"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               Padding="15"></Label>
+                    </StackLayout>
+                    <ListView ItemsSource="{Binding Productos_sin_Precio}" x:Name="listaprod_sin_precio" ItemTapped="listaprod_sin_precio_ItemTapped" Margin="100"
+                              BackgroundColor="#364c42">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="30" BackgroundColor="Transparent">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="60" BackgroundColor="White">
+                                                <Image Source="{Binding imagen}"/>
+                                            </Frame>
+                                            <Label Text="{Binding nombre}" Padding="20,10,10,10" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Center" FontAttributes="Bold"  VerticalTextAlignment="Center" FontSize="20"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

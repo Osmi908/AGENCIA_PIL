@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+            x:Class="Agencia_Pil.Views.ActualizarPage"
+            BackgroundColor="DarkSlateBlue"
+            BarBackgroundColor="#003679"
+            BarTextColor="White">
+    <TabbedPage.Children>
+        <ContentPage Title="VENTAS DESDE EL CELULAR" >
+            <ContentPage.Content>
+                <StackLayout Margin="50" >
+                    <Label Text="LISTA DE VENTAS " Style="{StaticResource TITULOLISTA}" TextColor="#cccccc"></Label>
+                    <Grid BackgroundColor="#554593" HorizontalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Style="{StaticResource NOMBRE_COLUMNA}" Text="VENDEDOR"  Grid.Column="0" Grid.Row="0" TextColor="WhiteSmoke" ></Label>
+                        <Label Style="{StaticResource NOMBRE_COLUMNA}" Text="MONTO DE LA VENTA" Grid.Column="1" Grid.Row="0" TextColor="WhiteSmoke"/>
+                        <Label Style="{StaticResource NOMBRE_COLUMNA}" Text="CANTIDAD" Grid.Column="2" Grid.Row="0" TextColor="WhiteSmoke"/>
+                        <Label Style="{StaticResource NOMBRE_COLUMNA}" Text="FECHA" Grid.Column="3" Grid.Row="0" TextColor="WhiteSmoke"/>
+                        <Label Style="{StaticResource NOMBRE_COLUMNA}" Text="HORA"  Grid.Column="4" Grid.Row="0" TextColor="WhiteSmoke"/>
+                        <BoxView BackgroundColor="Black" HeightRequest="5" WidthRequest="100" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="2" Color="Black" Grid.Row="1" Grid.ColumnSpan="5"></BoxView>
+                        <ListView ItemsSource="{Binding ventas}" x:Name="listaProd"  ItemTapped="listaProd_ItemTapped" Grid.Row="2" Grid.ColumnSpan="5">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <pancake:PancakeView BackgroundGradientStartColor="#554593" BackgroundGradientEndColor="Black" HeightRequest="50" BackgroundGradientAngle="90">
+                                            <Grid HorizontalOptions="FillAndExpand">
+                                                <Label Text="{Binding ci_usuario}" HorizontalOptions="CenterAndExpand" Grid.Column="0" FontFamily="Impact" FontSize="15" TextColor="#cccccc" VerticalOptions="Center"/>
+                                                <Label Text="{Binding Monto_total ,StringFormat='{0:f} Bs'}" HorizontalOptions="CenterAndExpand" Grid.Column="1" FontFamily="Impact" FontSize="15" TextColor="#cccccc" VerticalOptions="Center"/>
+                                                <Label Text="{Binding cantidad_productos }" HorizontalOptions="CenterAndExpand" Grid.Column="2" FontFamily="Impact" FontSize="15" TextColor="#cccccc" VerticalOptions="Center"></Label>
+                                                <Label Text="{Binding fecha, StringFormat='{0:MMMM dd, yyyy}'}" HorizontalOptions="CenterAndExpand" Grid.Column="3" FontFamily="Impact" FontSize="15" TextColor="#cccccc" VerticalOptions="Center"></Label>
+                                                <Label Text="{Binding fecha, StringFormat='{}{0:hh\\:mm tt}'}" HorizontalOptions="CenterAndExpand" Grid.Column="4" FontFamily="Impact" FontSize="15" TextColor="#cccccc" VerticalOptions="Center"></Label>
+                                            </Grid>
+                                        </pancake:PancakeView>
+                                        
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <pancake:PancakeView BackgroundGradientStartColor="Black" BackgroundGradientEndColor="DarkSlateBlue" BackgroundGradientAngle="90" Grid.Row="3" Grid.ColumnSpan="5"  VerticalOptions="Fill" HeightRequest="200">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="MONTO TOTAL" Style="{StaticResource TITULOLISTA}" TextColor="#aaaaaa"/>
+                                    <Label HorizontalOptions="Center" Text="{Binding Monto_Total, StringFormat='{0:f} Bolivianos'}" FontSize="20" FontFamily="Impact" TextColor="#cccccc"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="PRODUCTOS VENDIDOS" Style="{StaticResource TITULOLISTA}" TextColor="#aaaaaa"/>
+                                    <Label Text="{Binding Cantidad_Total, StringFormat='{0} Productos'}"  FontSize="20" FontFamily="Impact" HorizontalOptions="Center" TextColor="#cccccc"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Button Text="REGISTRAR VENTAS" x:Name="btnRegVentas" VerticalOptions="CenterAndExpand"
+                                        Clicked="btnRegVentas_Clicked" BackgroundColor="Gray" BorderColor="White" BorderWidth="3" FontSize="18" FontFamily="Impact"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                        </pancake:PancakeView>
+                        <StackLayout>
+                            
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                    
+            </ContentPage.Content>
+        </ContentPage>
+        <ContentPage Title="CAMBIO DE DATOS">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="CAMBIAR"></Label>
+                    <ListView >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </TabbedPage.Children>
+    </TabbedPage>

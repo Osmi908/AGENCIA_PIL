@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agencia_Pil.Views.AgregarProducto"
+             Title="NUEVO PRODUCTO"
+             BackgroundColor="#485e54">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Padding="10">
+                    <Label Text="DATOS DEL PRODUCTO" TextColor="Khaki" HorizontalOptions="Center" VerticalOptions="FillAndExpand" FontSize="25" FontAttributes="Bold" Style="{StaticResource TITULOLISTA}"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               Padding="15"></Label>
+                    
+                </StackLayout>
+                <Frame HeightRequest="500" WidthRequest="500" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#364c42">
+                <StackLayout>
+                    <!--marca="ARUBA",
+                        categoria="BEBIDAS",
+                        tipo="REFRESCOS SABORIZADOS",
+                        codigo="bars01",
+                        detalle="2 litro",
+                        imagen="bars01.jpg",
+                        Presentacion="botella",
+                        nombre="Aruba Fruit Punch 2L",-->
+                    <Entry Placeholder="MARCA..." x:Name="txtmarca" Text="" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"></Entry>
+                    <Entry Placeholder="NOMBRE..." Text="" x:Name="txtnombre" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"></Entry >
+                    <Entry Placeholder="CODIGO..." Text="" x:Name="txtcodigo" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"/>
+                    <Entry Placeholder="CATEGORIA..." x:Name="txtcategoria" Text="" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"/>
+                    <Entry Placeholder="DETALLE..." Text="" x:Name="txtdetalle" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"/>
+                    <Entry Placeholder="TIPO..." Text="" x:Name="txttipo" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"/>
+                    <Entry Placeholder="PRESENTACION..." x:Name="txtpresentacion" Text="" Focused="txtmarca_Focused" PlaceholderColor="LightSlateGray" TextColor="WhiteSmoke" BackgroundColor="Transparent"/>
+                    <StackLayout Orientation="Horizontal" Spacing="0" Focused="txtmarca_Focused" Margin="10">
+                        <Image x:Name="imgProducto" HeightRequest="50" WidthRequest="50"/>
+                        <Label  x:Name="lblimagen" Text="Nombre de la imagn...." WidthRequest="350" 
+                                Focused="txtmarca_Focused" Margin="10,5,5,5" TextColor="WhiteSmoke" BackgroundColor="Transparent" />
+                        <Button Text="seleccionar imagen" x:Name="btnseleccionar" Clicked="btnseleccionar_Clicked" 
+                                WidthRequest="150" BorderColor="White" BackgroundColor="LightSlateGray" TextColor="Khaki"  FontAttributes="Bold" FontFamily="FondoMade" />
+                    </StackLayout>
+                    <Button Text="REGISTRAR" Clicked="btnregistrar_Clicked" x:Name="btnregistrar" BorderColor="White" BackgroundColor="LightSlateGray" TextColor="Khaki" FontAttributes="Bold" FontFamily="FondoMade" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

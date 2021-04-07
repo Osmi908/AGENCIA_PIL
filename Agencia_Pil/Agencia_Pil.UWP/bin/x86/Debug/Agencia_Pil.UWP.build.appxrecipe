@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-C3RUVH0</Machine>
+    <WindowsUser>My PC</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
+    <PackageIdentityPublisher>CN=c2509e90-227f-4fb2-87b0-ec4ee68c8b0f</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\Agencia_Pil.UWP.exe">
+      <PackagePath>entrypoint\Agencia_Pil.UWP.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\firebasedatabase.net\4.0.6\lib\netstandard2.0\Firebase.dll">
+      <PackagePath>Firebase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\litedb\4.1.4\lib\netstandard2.0\LiteDB.dll">
+      <PackagePath>LiteDB.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\rg.plugins.popup\2.0.0.11\lib\uap10.0.17763\Rg.Plugins.Popup.dll">
+      <PackagePath>Rg.Plugins.Popup.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
+      <PackagePath>System.Reactive.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.essentials\1.6.1\lib\uap10.0.16299\Xamarin.Essentials.dll">
+      <PackagePath>Xamarin.Essentials.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP.dll">
+      <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms.pancakeview\1.4.2\lib\uap10.0.16299\Xamarin.Forms.PancakeView.dll">
+      <PackagePath>Xamarin.Forms.PancakeView.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.plugin.filepicker\2.1.41\lib\uap10.0.16299\Plugin.FilePicker.dll">
+      <PackagePath>Plugin.FilePicker.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil\bin\Debug\netstandard2.0\Agencia_Pil.dll">
+      <PackagePath>Agencia_Pil.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\administrador.png">
+      <PackagePath>administrador.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\inventario.png">
+      <PackagePath>inventario.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\logoPil.png">
+      <PackagePath>logoPil.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf12.png">
+      <PackagePath>lplf12.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf42.png">
+      <PackagePath>lplf42.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf61.png">
+      <PackagePath>lplf61.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf80.png">
+      <PackagePath>lplf80.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp60.png">
+      <PackagePath>lplp60.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\produ.png">
+      <PackagePath>produ.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\venta.png">
+      <PackagePath>venta.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars01.jpg">
+      <PackagePath>bars01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars02.jpg">
+      <PackagePath>bars02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars03.jpg">
+      <PackagePath>bars03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars04.jpg">
+      <PackagePath>bars04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars05.jpg">
+      <PackagePath>bars05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars06.jpg">
+      <PackagePath>bars06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars07.jpg">
+      <PackagePath>bars07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bars08.jpg">
+      <PackagePath>bars08.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn01.jpg">
+      <PackagePath>bpbn01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn02.jpg">
+      <PackagePath>bpbn02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn03.jpg">
+      <PackagePath>bpbn03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn04.jpg">
+      <PackagePath>bpbn04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn05.jpg">
+      <PackagePath>bpbn05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn06.jpg">
+      <PackagePath>bpbn06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn07.jpg">
+      <PackagePath>bpbn07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn08.jpg">
+      <PackagePath>bpbn08.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn09.jpg">
+      <PackagePath>bpbn09.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn10.jpg">
+      <PackagePath>bpbn10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn11.jpg">
+      <PackagePath>bpbn11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn12.jpg">
+      <PackagePath>bpbn12.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpbn13.jpg">
+      <PackagePath>bpbn13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpva01.jpg">
+      <PackagePath>bpva01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpva02.jpg">
+      <PackagePath>bpva02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpva03.jpg">
+      <PackagePath>bpva03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpva04.jpg">
+      <PackagePath>bpva04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvbr01.jpg">
+      <PackagePath>bpvbr01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvbr02.jpg">
+      <PackagePath>bpvbr02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvbr03.jpg">
+      <PackagePath>bpvbr03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn01.jpg">
+      <PackagePath>bpvn01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn02.jpg">
+      <PackagePath>bpvn02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn03.jpg">
+      <PackagePath>bpvn03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn04.jpg">
+      <PackagePath>bpvn04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn05.jpg">
+      <PackagePath>bpvn05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn06.jpg">
+      <PackagePath>bpvn06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn07.jpg">
+      <PackagePath>bpvn07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn08.jpg">
+      <PackagePath>bpvn08.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn09.jpg">
+      <PackagePath>bpvn09.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bpvn10.jpg">
+      <PackagePath>bpvn10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtl01.jpg">
+      <PackagePath>brtl01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtl02.jpg">
+      <PackagePath>brtl02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtn01.jpg">
+      <PackagePath>brtn01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtn02.jpg">
+      <PackagePath>brtn02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtn03.jpg">
+      <PackagePath>brtn03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\brtn04.jpg">
+      <PackagePath>brtn04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\CGG001.jpg">
+      <PackagePath>CGG001.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lfb10.jpg">
+      <PackagePath>lfb10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lfb20.jpg">
+      <PackagePath>lfb20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lgc10.jpg">
+      <PackagePath>lgc10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lpb10.jpg">
+      <PackagePath>lpb10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lpb20.jpg">
+      <PackagePath>lpb20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplc10.jpg">
+      <PackagePath>lplc10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lple10.jpg">
+      <PackagePath>lple10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf10.jpg">
+      <PackagePath>lplf10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf11.jpg">
+      <PackagePath>lplf11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf13.jpg">
+      <PackagePath>lplf13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf20.jpg">
+      <PackagePath>lplf20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf21.jpg">
+      <PackagePath>lplf21.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf22.jpg">
+      <PackagePath>lplf22.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf30.jpg">
+      <PackagePath>lplf30.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf31.jpg">
+      <PackagePath>lplf31.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf32.jpg">
+      <PackagePath>lplf32.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf40.jpg">
+      <PackagePath>lplf40.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf41.jpg">
+      <PackagePath>lplf41.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf50.jpg">
+      <PackagePath>lplf50.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf51.jpg">
+      <PackagePath>lplf51.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf52.jpg">
+      <PackagePath>lplf52.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf60.jpg">
+      <PackagePath>lplf60.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf62.jpg">
+      <PackagePath>lplf62.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf70.jpg">
+      <PackagePath>lplf70.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf71.jpg">
+      <PackagePath>lplf71.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf72.jpg">
+      <PackagePath>lplf72.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf81.jpg">
+      <PackagePath>lplf81.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf82.jpg">
+      <PackagePath>lplf82.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf90.jpg">
+      <PackagePath>lplf90.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf91.jpg">
+      <PackagePath>lplf91.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplf92.jpg">
+      <PackagePath>lplf92.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp10.jpg">
+      <PackagePath>lplp10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp11.jpg">
+      <PackagePath>lplp11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp20.jpg">
+      <PackagePath>lplp20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp21.jpg">
+      <PackagePath>lplp21.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp30.jpg">
+      <PackagePath>lplp30.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp31.jpg">
+      <PackagePath>lplp31.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp40.jpg">
+      <PackagePath>lplp40.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp50.jpg">
+      <PackagePath>lplp50.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp70.jpg">
+      <PackagePath>lplp70.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp80.jpg">
+      <PackagePath>lplp80.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lplp90.jpg">
+      <PackagePath>lplp90.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\lpve10.jpg">
+      <PackagePath>lpve10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ppc10.jpg">
+      <PackagePath>ppc10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ppc20.jpg">
+      <PackagePath>ppc20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ppp10.jpg">
+      <PackagePath>ppp10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ppp11.jpg">
+      <PackagePath>ppp11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ybyb01.jpg">
+      <PackagePath>ybyb01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ybyb02.jpg">
+      <PackagePath>ybyb02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ybyb03.jpg">
+      <PackagePath>ybyb03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ybyb04.jpg">
+      <PackagePath>ybyb04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ygyb01.jpg">
+      <PackagePath>ygyb01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ygyb02.jpg">
+      <PackagePath>ygyb02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypvyb01.jpg">
+      <PackagePath>ypvyb01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypvyb02.jpg">
+      <PackagePath>ypvyb02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb01.jpg">
+      <PackagePath>ypyb01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb02.jpg">
+      <PackagePath>ypyb02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb03.jpg">
+      <PackagePath>ypyb03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb04.jpg">
+      <PackagePath>ypyb04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb05.jpg">
+      <PackagePath>ypyb05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb06.jpg">
+      <PackagePath>ypyb06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb07.jpg">
+      <PackagePath>ypyb07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb08.jpg">
+      <PackagePath>ypyb08.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb09.jpg">
+      <PackagePath>ypyb09.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb10.jpg">
+      <PackagePath>ypyb10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb11.jpg">
+      <PackagePath>ypyb11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb12.jpg">
+      <PackagePath>ypyb12.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb13.jpg">
+      <PackagePath>ypyb13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb14.jpg">
+      <PackagePath>ypyb14.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb15.jpg">
+      <PackagePath>ypyb15.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb16.jpg">
+      <PackagePath>ypyb16.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb17.jpg">
+      <PackagePath>ypyb17.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb18.jpg">
+      <PackagePath>ypyb18.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb19.jpg">
+      <PackagePath>ypyb19.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb20.jpg">
+      <PackagePath>ypyb20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb21.jpg">
+      <PackagePath>ypyb21.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb22.jpg">
+      <PackagePath>ypyb22.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb23.jpg">
+      <PackagePath>ypyb23.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyb24.jpg">
+      <PackagePath>ypyb24.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyba01.jpg">
+      <PackagePath>ypyba01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypye01.jpg">
+      <PackagePath>ypye01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypye02.jpg">
+      <PackagePath>ypye02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypye03.jpg">
+      <PackagePath>ypye03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypye04.jpg">
+      <PackagePath>ypye04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf01.jpg">
+      <PackagePath>ypyf01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf02.jpg">
+      <PackagePath>ypyf02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf03.jpg">
+      <PackagePath>ypyf03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf04.jpg">
+      <PackagePath>ypyf04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf05.jpg">
+      <PackagePath>ypyf05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf06.jpg">
+      <PackagePath>ypyf06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf07.jpg">
+      <PackagePath>ypyf07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf08.jpg">
+      <PackagePath>ypyf08.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyf09.jpg">
+      <PackagePath>ypyf09.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyg01.jpg">
+      <PackagePath>ypyg01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyg02.jpg">
+      <PackagePath>ypyg02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyg03.jpg">
+      <PackagePath>ypyg03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyp01.jpg">
+      <PackagePath>ypyp01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyp02.jpg">
+      <PackagePath>ypyp02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyp03.jpg">
+      <PackagePath>ypyp03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyp04.jpg">
+      <PackagePath>ypyp04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\ypyp05.jpg">
+      <PackagePath>ypyp05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\berlin.TTF">
+      <PackagePath>Assets\berlin.TTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\Assets\MadeFlorenceSans.otf">
+      <PackagePath>Assets\MadeFlorenceSans.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\Agencia_Pil.UWP.xr.xml">
+      <PackagePath>Agencia_Pil.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\proyecto\Agencia_Pil\Agencia_Pil\Agencia_Pil.UWP\bin\x86\Debug\Core\Agencia_Pil.UWP.exe">
+      <PackagePath>Agencia_Pil.UWP.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42007.9001.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\My PC\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

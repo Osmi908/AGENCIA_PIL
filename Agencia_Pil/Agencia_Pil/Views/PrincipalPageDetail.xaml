@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Agencia_Pil.Views.PrincipalPageDetail"
+             Title="AGENCIA PIL">
+    <ContentPage.Content>
+        <pancake:PancakeView BackgroundColor="#003679">
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Text="INFORMACION DE LA AGENCIA" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"  FontSize="25" FontAttributes="Bold"></Label>
+                    <pancake:PancakeView BackgroundGradientEndColor="Transparent" BackgroundGradientStartColor="LightSkyBlue" Grid.Column="1" Grid.Row="1">
+                    <StackLayout   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="VENTAS"></Label>
+                        
+                            
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="DIARIO"></Label>
+                                    <Label Text="SEMANAL"></Label>
+                                    <Label Text="MENSUAL"></Label>
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="50bs"></Label>
+                                    <Label Text="100bs"></Label>
+                                    <Label Text="400bs"></Label>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        
+                        
+                    </StackLayout>
+                    </pancake:PancakeView>
+                    <StackLayout Grid.Column="3" Grid.Row="1" Background="#003679" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="{Binding clientes.Count, StringFormat='TIENES {0} CLIENTES NUEVOS'}" FontAttributes="Bold"/>
+                        <ListView ItemsSource="{Binding clientes}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Label Text="{Binding nombre}"
+                                           ></Label>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    <StackLayout Grid.Column="5" Grid.Row="1" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="PEDIDOS REGISTRADOS EN EL MES"></Label>
+                        <Label Text="{Binding ListaPedidosMes.Count}">
+                            
+                        </Label>
+                    </StackLayout>
+                    <Label Text="HISTORIAL DE VENTAS" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"  FontSize="25" FontAttributes="Bold"></Label>
+                    <StackLayout Grid.Column="1" Grid.Row="3" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="VENTAS DEL DIA"></Label>
+                        <Label Text="{Binding VentasDia}"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="3" Grid.Row="3" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="VENTAS DEL MES"></Label>
+                        <Label Text="{Binding VentasMes}"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="5" Grid.Row="3" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="VENTAS DEL AÑO"></Label>
+                        <Label Text="{Binding VentasAño}"></Label>
+                    </StackLayout>
+                    <Label Text="HISTORIAL DE COMPRAS" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"  FontSize="25" FontAttributes="Bold"></Label>
+                    <StackLayout Grid.Column="1" Grid.Row="5" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="COMPRAS DEL DIA"></Label>
+                        <Label Text="{Binding ComprasDia}"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="3" Grid.Row="5" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="COMPRAS DEL MES"></Label>
+                        <Label Text="{Binding ComprasMes}"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="5" Grid.Row="5" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="COMPRAS DEL AÑO"></Label>
+                        <Label Text="{Binding ComprasAño}"></Label>
+                        <Label Text="sadkjafgjakdfhashjfdk"></Label>
+                    </StackLayout>
+                    <Label Text="CUENTAS POR PAGAR" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="6" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"  FontSize="25" FontAttributes="Bold"></Label>
+                    <StackLayout Grid.Column="1" Grid.Row="7" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </StackLayout>
+                    <StackLayout Grid.Column="3" Grid.Row="7" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </StackLayout>
+                    <StackLayout Grid.Column="5" Grid.Row="7" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </StackLayout>
+                    <Label Text="GASTOS" Grid.Column="3" Grid.Row="8"></Label>
+                    <StackLayout Grid.Column="3" Grid.Row="9" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </StackLayout>
+                    <StackLayout Grid.Column="5" Grid.Row="9" Background="LightSkyBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </StackLayout>
+
+                </Grid>
+            </ScrollView>
+        </pancake:PancakeView>
+        
+
+    </ContentPage.Content>
+</ContentPage>
